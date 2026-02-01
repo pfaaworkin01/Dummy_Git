@@ -11,8 +11,8 @@ int main(int argc, char *argv[]) {
         parse_command(argv[1], &store);
     }
 
+    // Removed use-after-free: parse_command was called after store_free
     store_free(&store);
-    parse_command("start 1 test", &store);
 
     return 0;
 }
