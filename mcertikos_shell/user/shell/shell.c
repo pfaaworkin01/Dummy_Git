@@ -134,7 +134,7 @@ static err_t process_cmd(char *line)
     }
 
     return E_INVAL_CMD;
-}
+}s
 
 int main(int argc, char *argv[])
 {
